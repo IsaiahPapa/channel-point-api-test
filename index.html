@@ -20,7 +20,7 @@
                 padding: 40px;
                 border-radius: 8px;
             }
-            #login-button {
+            #login-button, #copy-button {
                 display: inline-block;
                 padding: 10px 20px;
                 background-color: #9146ff;
@@ -28,6 +28,12 @@
                 text-decoration: none;
                 border-radius: 5px;
                 font-weight: bold;
+                border: none;
+                cursor: pointer;
+            }
+            #copy-button {
+                background-color: #5c16c5;
+                margin-top: 10px;
             }
             #results {
                 margin-top: 20px;
@@ -37,6 +43,7 @@
                 text-align: left;
                 white-space: pre-wrap;
                 word-wrap: break-word;
+                /* --- ADDED RULES --- */
                 max-height: 32rem;
                 overflow-y: auto;
             }
@@ -48,6 +55,7 @@
             <p>Log in to check your Channel Points API status.</p>
             <a id="login-button" href="#">Login with Twitch</a>
             <pre id="results">Awaiting login...</pre>
+            <button id="copy-button" style="display: none;">Copy Results</button>
         </div>
 
         <script src="app.js"></script>
