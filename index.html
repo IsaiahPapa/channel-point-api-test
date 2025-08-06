@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Twitch API Status Tester</title>
+        <style>
+            body {
+                font-family: sans-serif;
+                background-color: #18181b;
+                color: #efeff1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+            #container {
+                text-align: center;
+                background-color: #2a2a2e;
+                padding: 40px;
+                border-radius: 8px;
+            }
+            #login-button {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: #9146ff;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+            #results {
+                margin-top: 20px;
+                background-color: #111;
+                padding: 15px;
+                border-radius: 5px;
+                text-align: left;
+                white-space: pre-wrap;
+                word-wrap: break-word;
+                max-height: 32rem;
+                overflow-y: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h1>Twitch API Status Tester</h1>
+            <p>Log in to check your Channel Points API status.</p>
+            <a id="login-button" href="#">Login with Twitch</a>
+            <pre id="results">Awaiting login...</pre>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
